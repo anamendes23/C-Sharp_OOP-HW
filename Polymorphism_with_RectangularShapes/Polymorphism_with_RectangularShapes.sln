@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism_with_RectangularShapes", "Polymorphism_with_RectangularShapes\Polymorphism_with_RectangularShapes.csproj", "{238066DD-7AF2-40DA-B4F6-03BAA73B566D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangularShapesLib", "RectangularShapesLib\RectangularShapesLib.csproj", "{938A92A8-ADF4-474F-9A68-40A69154E8F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{238066DD-7AF2-40DA-B4F6-03BAA73B566D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238066DD-7AF2-40DA-B4F6-03BAA73B566D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238066DD-7AF2-40DA-B4F6-03BAA73B566D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238066DD-7AF2-40DA-B4F6-03BAA73B566D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938A92A8-ADF4-474F-9A68-40A69154E8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938A92A8-ADF4-474F-9A68-40A69154E8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938A92A8-ADF4-474F-9A68-40A69154E8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938A92A8-ADF4-474F-9A68-40A69154E8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC61CCD2-2402-4D17-942C-1DF098973156}
+	EndGlobalSection
+EndGlobal

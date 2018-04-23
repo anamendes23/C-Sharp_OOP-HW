@@ -1,0 +1,6 @@
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\Polymorphism_with_RectangularShapes\RectangularShapesLib\bin\Debug\RectangularShapesLib.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\Polymorphism_with_RectangularShapes\RectangularShapesLib\bin\Debug\RectangularShapesLib.pdb
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\Polymorphism_with_RectangularShapes\RectangularShapesLib\obj\Debug\RectangularShapesLib.csprojResolveAssemblyReference.cache
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\Polymorphism_with_RectangularShapes\RectangularShapesLib\obj\Debug\RectangularShapesLib.csproj.CoreCompileInputs.cache
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\Polymorphism_with_RectangularShapes\RectangularShapesLib\obj\Debug\RectangularShapesLib.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\Polymorphism_with_RectangularShapes\RectangularShapesLib\obj\Debug\RectangularShapesLib.pdb
