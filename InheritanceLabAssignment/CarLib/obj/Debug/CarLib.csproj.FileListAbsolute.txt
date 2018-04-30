@@ -24,3 +24,7 @@ C:\Users\ana_c\Desktop\InheritanceLabAssignment\CarLib\obj\Debug\CarLib.csproj.C
 C:\Users\ana_c\Desktop\InheritanceLabAssignment\CarLib\obj\Debug\CarLib.csproj.CopyComplete
 C:\Users\ana_c\Desktop\InheritanceLabAssignment\CarLib\obj\Debug\CarLib.dll
 C:\Users\ana_c\Desktop\InheritanceLabAssignment\CarLib\obj\Debug\CarLib.pdb
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\CarLib\bin\Debug\MetroFramework.Design.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\CarLib\bin\Debug\MetroFramework.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\CarLib\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\CarLib\obj\Debug\CarLib.csproj.CopyComplete

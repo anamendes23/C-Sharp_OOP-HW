@@ -43,3 +43,6 @@ C:\Users\ana_c\Desktop\InheritanceLabAssignment\InheritanceLabAssignment\obj\Deb
 C:\Users\ana_c\Desktop\InheritanceLabAssignment\InheritanceLabAssignment\obj\Debug\InheritanceLabAssignment.csproj.CopyComplete
 C:\Users\ana_c\Desktop\InheritanceLabAssignment\InheritanceLabAssignment\obj\Debug\InheritanceLabAssignment.exe
 C:\Users\ana_c\Desktop\InheritanceLabAssignment\InheritanceLabAssignment\obj\Debug\InheritanceLabAssignment.pdb
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\InheritanceLabAssignment\bin\Debug\MetroFramework.Design.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\InheritanceLabAssignment\bin\Debug\MetroFramework.dll
+C:\Users\ana_c\Documents\RTC\3_quarter\CSI155-OOP_CSharp\Assignments\InheritanceLabAssignment\InheritanceLabAssignment\bin\Debug\MetroFramework.Fonts.dll
