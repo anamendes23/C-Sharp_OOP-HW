@@ -17,6 +17,8 @@ namespace CurrentBudget
         List<Budget> budgetList = new List<Budget>();
         //budget dictionary where the key is BudgetCode and the value is Balance
         Dictionary<string, decimal> budgetDictionary = new Dictionary<string, decimal>();
+        //list of transactions
+        List<ITransaction> transList = new List<ITransaction>();
         //**************************FORM***********************************
         public Form1()
         {
@@ -26,6 +28,7 @@ namespace CurrentBudget
         {
             PopulateFormLoad();
             budgetList.Sort((x, y) => x.Balance.CompareTo(y.Balance));
+            PopulateTransactions();
             PopulateCombobox();
         }
         //**************************METHODS***********************************
@@ -72,6 +75,27 @@ namespace CurrentBudget
             {
                 comboBox1.Items.Add(obj.BudgetCode);
             }
+
+            foreach (Transaction obj in transList)
+            {
+                comboBox2.Items.Add(obj.TCode);
+            }
+        }
+
+        private void PopulateTransactions()
+        {
+            Random rand = new Random();
+
+            Transaction t1 = new Transaction(rand.Next(1000, 10000).ToString(), new DateTime(2018, 04, 30), rand.Next(100, 1000));
+            Transaction t2 = new Transaction(rand.Next(1000, 10000).ToString(), new DateTime(2018, 04, 28), rand.Next(100, 1000));
+            Transaction t3 = new Transaction(rand.Next(1000, 10000).ToString(), new DateTime(2018, 04, 17), rand.Next(100, 1000));
+            Transaction t4 = new Transaction(rand.Next(1000, 10000).ToString(), new DateTime(2018, 04, 04), rand.Next(100, 1000));
+            Transaction t5 = new Transaction(rand.Next(1000, 10000).ToString(), new DateTime(2018, 04, 01), rand.Next(100, 1000));
+            transList.Add(t1);
+            transList.Add(t2);
+            transList.Add(t3);
+            transList.Add(t4);
+            transList.Add(t5);
         }
         //**************************EVENTS***********************************
         private void btnDisplay_Click(object sender, EventArgs e)
@@ -90,7 +114,107 @@ namespace CurrentBudget
 
         private void btnBinary_Click(object sender, EventArgs e)
         {
+            byte n = 0;
+            List<byte> bytes = new List<byte>();
+            byte remainder;
+            string binary = String.Empty;
+            if (byte.TryParse(textBox1.Text, out n))
+            {
+                binary = $"The binary of {n} is ";
 
+                do
+                {
+                    remainder = (byte)(n % 2);
+                    bytes.Add(remainder);
+                    n /= 2;
+                }
+                while (n != 0);
+
+                if (bytes.Count < 4)
+                {
+                    for (int i = 0; i <= 4 - bytes.Count; i++)
+                    {
+                        bytes.Add(0);
+                    }
+                }
+
+                for (int i = (bytes.Count - 1); i >= 0; i--)
+                {
+                    binary += $"{bytes[i]}";
+                }
+
+                MessageBox.Show(binary);
+
+                if (bytes[4] == 1)
+                    MessageBox.Show("bit4 is 1");
+                else
+                    MessageBox.Show("bit4 is 0");
+            }
+            else
+                MessageBox.Show("Enter a number between 0 and 255");
         }
+
+        private void btnGetBits_Click(object sender, EventArgs e)
+        {
+            byte[] bits = { 0, 0, 0, 0, 0, 0 };
+
+            string message = "Original binary: ";
+
+            foreach (byte b in bits)
+            {
+                message += b;
+            }
+
+            message += $"\nbit3 = 1: ";
+            bits[bits.Length - 3] = 1;
+
+            foreach (byte b in bits)
+            {
+                message += b;
+            }
+
+            for (int i = 0; i < bits.Length; i++)
+            {
+                bits[i] = 1;
+            }
+
+            message += "\nOriginal binary: ";
+
+            foreach (byte b in bits)
+            {
+                message += b;
+            }
+
+            message += $"\nbit5 = 0: ";
+            bits[bits.Length - 5] = 0;
+
+            foreach (byte b in bits)
+            {
+                message += b;
+            }
+
+            MessageBox.Show(message);
+        }
+        private void btnDisplayTrans_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+
+            foreach (Transaction obj in transList)
+            {
+                richTextBox1.AppendText($"{obj.ShowTransaction()} \n");
+            }
+        }
+        //btn to Update Transaction
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int index = comboBox2.SelectedIndex;
+            decimal newAmount = Convert.ToDecimal(textBox2.Text);
+
+            transList[index].UpdateAmount(newAmount);
+
+            btnDisplayTrans_Click(sender, e);
+        }
+
+
     }
 }
