@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarUsingPolymorphism", "CarUsingPolymorphism\CarUsingPolymorphism.csproj", "{BEEDDC16-A6AF-49E3-AACE-77D1E8D64375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLib", "CarLib\CarLib.csproj", "{5D0695DC-52DE-4586-9063-4D7CD49E1786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEEDDC16-A6AF-49E3-AACE-77D1E8D64375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEDDC16-A6AF-49E3-AACE-77D1E8D64375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEDDC16-A6AF-49E3-AACE-77D1E8D64375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEDDC16-A6AF-49E3-AACE-77D1E8D64375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0695DC-52DE-4586-9063-4D7CD49E1786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0695DC-52DE-4586-9063-4D7CD49E1786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0695DC-52DE-4586-9063-4D7CD49E1786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0695DC-52DE-4586-9063-4D7CD49E1786}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DED61CED-26CA-4A87-97E0-46045EEFAE02}
+	EndGlobalSection
+EndGlobal
