@@ -48,7 +48,8 @@ namespace ReadWriteBinaryFiles_Account
                     //read data in the same order it was written
                     string accNumber = br.ReadString();
                     decimal balance = br.ReadDecimal();
-                    DateTime dateCreated = DateTime.FromBinary(br.Read());
+                    long binLocal = br.ReadInt64();
+                    DateTime dateCreated = DateTime.FromBinary(binLocal);
                     string bankName = br.ReadString();
 
                     Account acc = new Account
@@ -93,6 +94,7 @@ namespace ReadWriteBinaryFiles_Account
                 string accNumber = txtAccNumber.Text;
                 decimal balance = decimal.Parse(txtBalance.Text);
                 DateTime dateCreated = dtpDateCreated.Value;
+                long binLocal = dateCreated.ToBinary();
                 string bankName = txtBank.Text;
 
                 //create acc object
@@ -109,7 +111,7 @@ namespace ReadWriteBinaryFiles_Account
                 //write to file
                 bw.Write(accNumber);
                 bw.Write(balance);
-                bw.Write(dateCreated.ToBinary());
+                bw.Write(binLocal);
                 bw.Write(bankName);
                 //user message
                 MessageBox.Show("Account data was saved to file");
@@ -141,7 +143,7 @@ namespace ReadWriteBinaryFiles_Account
                 if (File.Exists(listFilePath))
                 {
                     //delete file if it exists
-                    Directory.Delete(listFilePath);
+                    File.Delete(listFilePath);
                 }
                 //1. Open file for appending
                 fs = new FileStream(listFilePath, FileMode.Append, FileAccess.Write);
@@ -184,7 +186,8 @@ namespace ReadWriteBinaryFiles_Account
                 {
                     string accNumber = br.ReadString();
                     decimal balance = br.ReadDecimal();
-                    DateTime dateCreated = DateTime.FromBinary(br.Read());
+                    long binLocal = br.ReadInt64();
+                    DateTime dateCreated = DateTime.FromBinary(binLocal);
                     string bankName = br.ReadString();
                     //display
                     richTextBox1.AppendText(
@@ -223,7 +226,8 @@ namespace ReadWriteBinaryFiles_Account
                 {
                     string accNumber = br.ReadString();
                     decimal balance = br.ReadDecimal();
-                    DateTime dateCreated = DateTime.FromBinary(br.Read());
+                    long binLocal = br.ReadInt64();
+                    DateTime dateCreated = DateTime.FromBinary(binLocal);
                     string bankName = br.ReadString();
                     //display
                     string[] row = { accNumber, balance.ToString("c"), dateCreated.ToShortDateString(), bankName };
