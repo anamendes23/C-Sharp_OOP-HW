@@ -30,6 +30,6 @@ namespace Ana_AnimalLib
             return false;
         }
 
-        public abstract override Image GetPicture();
+        public override abstract Image GetPicture();
     }
 }
